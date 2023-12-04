@@ -1,0 +1,32 @@
+ion-header.custom-header {
+  --background: rgba(255, 255, 255, 0.8);
+  margin-top: -30px;
+  margin-bottom: -10px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+
+ion-title.custom-title {
+  text-align: center; /* Alinha o texto ao centro */
+  font-size: 1rem; /* Reduz o tamanho do texto (ajuste conforme necessário) */
+}
+
+:host {
+  flex-direction: none;
+
+}
+
+.custom-card {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+ion-list.ion-text-center {
+  width: 100%;
+  text-align: center;
+
+}
+

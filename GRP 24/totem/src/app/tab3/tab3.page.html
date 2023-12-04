@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Relatório
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          Senhas emitidas: {{ senhasEmitidas }}
+        </ion-item>
+        <ion-item>
+          Senhas atendidas: {{ senhasAtendidas }}
+        </ion-item>
+        <ion-item>
+          Senhas Geral: {{ this.senhasService.senhasArray['SG'].length }}
+        </ion-item>
+        <ion-item>
+          Senhas Prioritárias: {{  this.senhasService.senhasArray['SP'].length  }}
+        </ion-item>
+        <ion-item>
+          Senhas Exame: {{ this.senhasService.senhasArray['SE'].length }}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
